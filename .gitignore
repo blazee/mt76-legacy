@@ -1,0 +1,10 @@
+.env
+out/
+Module.symvers
+modules.order
+*.o
+*.ko
+.*.o.d
+.*.cmd
+*.mod
+*.mod.c
