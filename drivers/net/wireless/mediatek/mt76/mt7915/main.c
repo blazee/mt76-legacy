@@ -1332,6 +1332,7 @@ mt7915_twt_teardown_request(struct ieee80211_hw *hw,
 	mutex_unlock(&dev->mt76.mutex);
 }
 
+#if 0
 static int
 mt7915_set_radar_background(struct ieee80211_hw *hw,
 			    struct cfg80211_chan_def *chandef)
@@ -1380,6 +1381,7 @@ out:
 
 	return ret;
 }
+#endif
 
 const struct ieee80211_ops mt7915_ops = {
 	.tx = mt7915_tx,
@@ -1427,5 +1429,5 @@ const struct ieee80211_ops mt7915_ops = {
 #ifdef CONFIG_MAC80211_DEBUGFS
 	.sta_add_debugfs = mt7915_sta_add_debugfs,
 #endif
-	.set_radar_background = mt7915_set_radar_background,
+	//.set_radar_background = mt7915_set_radar_background,
 };
