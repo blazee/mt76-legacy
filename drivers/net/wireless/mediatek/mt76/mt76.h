@@ -13,7 +13,7 @@
 #include <linux/leds.h>
 #include <linux/usb.h>
 #include <linux/average.h>
-#include <linux/soc/mediatek/mtk_wed.h>
+#include "backport/mtk_wed.h"
 #include <net/mac80211.h>
 #include "util.h"
 #include "testmode.h"
